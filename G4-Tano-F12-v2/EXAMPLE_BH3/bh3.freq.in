@@ -1,0 +1,29 @@
+import math
+set_memory(15000000000)
+mymol = psi4.geometry("""
+ B         -0.0000000000       -0.0000107613        0.0000000000
+ H          0.0000000000        1.1891811079        0.0000000000
+ H          1.0298423809       -0.5945851733        0.0000000000
+ H         -1.0298423809       -0.5945851733        0.0000000000
+  symmetry c1
+""")
+
+hessian=np.loadtxt("bh3_hessCBS")
+molrec = mymol.to_schema(dtype='psi4')
+print("MOLRECORD")
+print(molrec)
+print("Geometry of the molecule is:\n")
+geom = np.array(molrec['geom']).reshape((-1, 3))
+print(geom)
+m = np.array(molrec['mass'])
+print("MASS")
+print(m)
+
+irrep_labels = mymol.irrep_labels()
+projtrans = True
+projrot = False
+wfn = psi4.core.Wavefunction.build(mymol, "STO-3G")  # dummy, obviously. only used for SALCs
+basisset = wfn.basisset()
+vibinfo, vibtext = qcdb.vib.harmonic_analysis(hessian, geom, m, basisset, irrep_labels, project_trans=projtrans, project_rot=projrot)
+print(vibinfo)
+print(vibtext)
