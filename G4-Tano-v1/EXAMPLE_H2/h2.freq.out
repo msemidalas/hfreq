@@ -1,0 +1,77 @@
+MOLRECORD
+{'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.molparse.from_string', 'version': 'v0.25.1'}, 'units': 'Bohr', 'geom': [0.0, 0.0, 0.7012002741580572, 0.0, 0.0, -0.7012002741580572], 'elea': [1, 1], 'elez': [1, 1], 'elem': ['H', 'H'], 'mass': [1.00782503223, 1.00782503223], 'real': [True, True], 'elbl': ['', ''], 'fragment_separators': [], 'molecular_charge': 0.0, 'fragment_charges': [0.0], 'molecular_multiplicity': 1, 'fragment_multiplicities': [1], 'fix_com': False, 'fix_orientation': False, 'fix_symmetry': 'c1', 'name': 'H2'}
+Geometry of the molecule is:
+
+[[ 0.          0.          0.70120027]
+ [ 0.          0.         -0.70120027]]
+MASS
+[1.00782503 1.00782503]
+{'q': Datum(numeric=True, label='normal mode', units='a0 u^1/2', data=array([[ 0.        ,  0.70710678,  0.        ,  0.        ,  0.70710678,
+        -0.        ],
+       [ 0.70710678, -0.        ,  0.        ,  0.70710678, -0.        ,
+        -0.        ],
+       [ 0.        , -0.        ,  0.70710678,  0.        , -0.        ,
+         0.70710678],
+       [-0.        ,  0.70710678, -0.        ,  0.        , -0.70710678,
+        -0.        ],
+       [ 0.70710678,  0.        , -0.        , -0.70710678, -0.        ,
+        -0.        ],
+       [-0.        , -0.        ,  0.70710678,  0.        , -0.        ,
+        -0.70710678]]), comment='normalized mass-weighted', doi=None, glossary=''), 'omega': Datum(numeric=True, label='frequency', units='cm^-1', data=array([   0.        +8.97148366e-06j,    0.        +0.00000000e+00j,
+          0.        +0.00000000e+00j,   45.56950358+0.00000000e+00j,
+         45.56950358+0.00000000e+00j, 4405.14188941+0.00000000e+00j]), comment='', doi=None, glossary=''), 'degeneracy': Datum(numeric=True, label='degeneracy', units='', data=array([3, 3, 3, 2, 2, 1]), comment='', doi=None, glossary=''), 'TRV': Datum(numeric=False, label='translation/rotation/vibration', units='', data=['TR', 'TR', 'TR', 'V', 'V', 'V'], comment='', doi=None, glossary=''), 'gamma': Datum(numeric=False, label='irreducible representation', units='', data=[None, None, None, 'A', 'A', 'A'], comment='', doi=None, glossary=''), 'w': Datum(numeric=True, label='normal mode', units='a0', data=array([[ 0.        ,  0.70435635,  0.        ,  0.        ,  0.70435635,
+         0.        ],
+       [ 0.70435635,  0.        ,  0.        ,  0.70435635,  0.        ,
+         0.        ],
+       [ 0.        ,  0.        ,  0.70435635,  0.        ,  0.        ,
+         0.70435635],
+       [ 0.        ,  0.70435635,  0.        ,  0.        , -0.70435635,
+         0.        ],
+       [ 0.70435635,  0.        ,  0.        , -0.70435635,  0.        ,
+         0.        ],
+       [ 0.        ,  0.        ,  0.70435635,  0.        ,  0.        ,
+        -0.70435635]]), comment='un-mass-weighted', doi=None, glossary=''), 'mu': Datum(numeric=True, label='reduced mass', units='u', data=array([1.00782503, 1.00782503, 1.00782503, 1.00782503, 1.0078250
+    Psi4 stopped on: Saturday, 12 August 2023 09:05AM
+    Psi4 wall time for execution: 0:00:00.36
+
+*** Psi4 exiting successfully. Buy a developer a beer!
+  0.        ,  0.        ,  0.70710678,
+         0.        ],
+       [ 0.70710678,  0.        ,  0.        ,  0.70710678,  0.        ,
+         0.        ],
+       [ 0.        ,  0.        ,  0.70710678,  0.        ,  0.        ,
+         0.70710678],
+       [ 0.        ,  0.70710678,  0.        ,  0.        , -0.70710678,
+         0.        ],
+       [ 0.70710678,  0.        ,  0.        , -0.70710678,  0.        ,
+         0.        ],
+       [ 0.        ,  0.        ,  0.70710678,  0.        ,  0.        ,
+        -0.70710678]]), comment='normalized un-mass-weighted', doi=None, glossary=''), 'k': Datum(numeric=True, label='force constant', units='mDyne/A', data=array([-4.77929585e-17,  0.00000000e+00,  0.00000000e+00,  1.23305932e-03,
+        1.23305932e-03,  1.15227245e+01]), comment='', doi=None, glossary=''), 'Qtp0': Datum(numeric=True, label='Turning point v=0', units='a0 u^1/2', data=array([0.        , 0.        , 0.        , 1.62545505, 1.62545505,
+       0.16532258]), comment='', doi=None, glossary=''), 'Xtp0': Datum(numeric=True, label='Turning point v=0', units='a0', data=array([0.        , 0.        , 0.        , 1.61913251, 1.61913251,
+       0.16467952]), comment='', doi=None, glossary=''), 'DQ0': Datum(numeric=True, label='RMS deviation v=0', units='a0 u^1/2', data=array([0.        , 0.        , 0.        , 1.14937029, 1.14937029,
+       0.11690071]), comment='', doi=None, glossary=''), 'theta_vib': Datum(numeric=True, label='char temp', units='K', data=array([   0.        ,    0.        ,    0.        ,   65.56436978,
+         65.56436978, 6338.01839088]), comment='', doi=None, glossary='')}
+
+
+  ==> Harmonic Vibrational Analysis <==
+
+  non-mass-weighted Hessian:       Symmetric? True   Hermitian? True   Lin Dep Dim?  3 (0)
+  projection of translations (True) and rotations (False) removed 3 degrees of freedom (5)
+  total projector:                 Symmetric? True   Hermitian? True   Lin Dep Dim?  3 (3)
+  mass-weighted Hessian:           Symmetric? True   Hermitian? True   Lin Dep Dim?  3 (0)
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000  [cm^-1]
+  pre-proj  low-frequency mode:    0.0000  [cm^-1]
+  pre-proj  low-frequency mode:   45.5695  [cm^-1]
+  pre-proj  low-frequency mode:   45.5695  [cm^-1]
+  pre-proj  all modes:['0.0000i' '0.0000' '0.0000' '45.5695' '45.5695' '4405.1419']
+  projected mass-weighted Hessian: Symmetric? True   Hermitian? True   Lin Dep Dim?  3 (3)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj low-frequency mode:   45.5695  [cm^-1] (V)
+  post-proj low-frequency mode:   45.5695  [cm^-1] (V)
+  post-proj  all modes:['0.0000i' '0.0000' '0.0000' '45.5695' '45.5695' '4405.1419']
+
+  Note that "Vibration"s include 2 un-projected rotation-like modes.

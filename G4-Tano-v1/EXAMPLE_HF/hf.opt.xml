@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <job>
+  <jobstep command="HF-SCF" commandset="SCFPRO">
+   <cml:molecule>
+    <cml:symmetry pointGroup="C2v">
+     <cml:transform3 title="generator" id="X">
+      -1  0  0  0  0  1  0  0  0  0  1  0  0  0  0  1
+     </cml:transform3>
+     <cml:transform3 title="generator" id="Y">
+       1  0  0  0  0 -1  0  0  0  0  1  0  0  0  0  1
+     </cml:transform3>
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="F" x3="0.0" y3="0.0" z3="0.91577E-01"/>
+     <cml:atom id="a2" elementType="H" x3="0.0" y3="0.0" z3="-0.824192"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-100.070439717708"/>
+   <property name="One-electron energy" method="RHF" value="-150.615508121547"/>
+   <property name="Two-electron energy" method="RHF" value="45.3444174775389"/>
+   <property name="Kinetic energy" method="RHF" value="100.03712291648"/>
+   <property name="Nuclear energy" method="RHF" value="5.20065092630019"/>
+   <property name="Virial quotient" method="RHF" value="-1.00033304437649"/>
+   <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+     stateNumber="1" value="0.0 0.0 -0.759832285063732"/>
+   <time start="09:57:32" end="09:57:34" cpu="1.02" system="1.04" real="2.6"/>
+   <storage units="megabyte" memory="0.0" sf="0.0" df="236.94" eaf="43.08" ga="0.0"/>
+   <summary overall_method="HF/USERDEF"/>
+  </jobstep>
+  <jobstep command="MP2" commandset="CCSD">
+   <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+     value="-100.070439717708"/>
+   <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.189741626806274"/>
+   <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.110925187100647"/>
+   <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.300666813906921"/>
+   <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+     stateNumber="1" value="-100.371106531615"/>
+   <time start="09:57:34" end="09:57:34" cpu="0.1" system="0.0" real="0.11"/>
+   <storage units="megabyte" memory="0.0" sf="0.63" df="237.78" eaf="43.08" ga="0.0"/>
+   <summary overall_method="MP2/USERDEF"/>
+  </jobstep>
+  <jobstep command="HF-SCF" commandset="SCFPRO">
+   <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-100.069299049901"/>
+   <property name="One-electron energy" method="RHF" value="-150.624154100443"/>
+   <property name="Two-electron energy" method="RHF" value="45.3542041242414"/>
+   <property name="Kinetic energy" method="RHF" value="100.041674484312"/>
+   <property name="Nuclear energy" method="RHF" value="5.20065092630019"/>
+   <property name="Virial quotient" method="RHF" value="-1.0002761305799"/>
+   <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+     stateNumber="1" value="0.0 0.0 -0.763615036183827"/>
+   <time start="09:57:34" end="09:57:35" cpu="0.82" system="0.1" real="1.12"/>
+   <storage units="megabyte" memory="0.0" sf="0.63" df="237.78" eaf="43.08" ga="0.0"/>
+   <summary overall_method="HF/USERDEF"/>
+  </jobstep>
+  <jobstep command="MP2" commandset="CCSD">
+   <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+     value="-100.069299049901"/>
+   <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.172077561080852"/>
+   <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.106924548857551"/>
+   <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.279002109938403"/>
+   <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+     stateNumber="1" value="-100.34830115984"/>
+   <time start="09:57:35" end="09:57:35" cpu="0.1" system="0.0" real="0.1"/>
+   <storage units="megabyte" memory="0.0" sf="0.63" df="237.78" eaf="43.08" ga="0.0"/>
+   <summary overall_method="MP2/USERDEF"/>
+  </jobstep>
+  <jobstep command="CCSD(T)" commandset="CCSD">
+   <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+     value="-100.069299049901"/>
+   <property name="singlet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-0.185631174084521"/>
+   <property name="triplet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-0.956402035430777E-01"/>
+   <property name="correlation energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-0.281271377622511"/>
+   <property name="contribution" method="Triples (T)" stateSymmetry="1" stateNumber="1"
+     value="-0.692909973975293E-02"/>
+   <property name="correlation energy" method="Total" stateSymmetry="1" stateNumber="1"
+     value="-0.288200477362264"/>
+   <property name="total energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-100.350570427524"/>
+   <property name="energy" method="CCSD[T]" stateSymmetry="1" stateNumber="1"
+     value="-100.357778609282"/>
+   <property name="energy" method="CCSD-T" stateSymmetry="1" stateNumber="1"
+     value="-100.357329479846"/>
+   <property name="total energy" method="CCSD(T)" principal="true" stateSymmetry="1"
+     stateNumber="1" value="-100.357499527264"/>
+   <time start="09:57:35" end="09:57:35" cpu="0.12" system="0.01" real="0.13"/>
+   <storage units="megabyte" memory="0.0" sf="0.66" df="238.53" eaf="43.08" ga="0.0"/>
+   <summary overall_method="CCSD(T)/USERDEF"/>
+  </jobstep>
+  <variables>
+   <variable name="E*" type="xsd:double" units="AU" length="1">
+    <value>-100.371106531615</value>
+   </variable>
+  </variables>
+  <jobstep command="OPTG" commandset="OPT">
+   <gradient name="ETOTAL" stateSymmetry="1" stateNumber="1" virial="-0.461206356833851E-02">
+      0.000000000000   0.000000000000  -0.002665081408
+      0.000000000000   0.000000000000   0.002665081408
+   </gradient>
+   <opt energy="-100.3803049" type="ETOTAL" line="0.0"
+     convergence="0.239481350029025E-02" gradient="0.376899427152466E-02"/>
+   <jobstep command="HF-SCF" commandset="SCFPRO">
+    <cml:molecule>
+     <cml:symmetry pointGroup="C2v">
+      <cml:transform3 title="generator" id="X">
+      -1  0  0  0  0  1  0  0  0  0  1  0  0  0  0  1
+      </cml:transform3>
+      <cml:transform3 title="generator" id="Y">
+       1  0  0  0  0 -1  0  0  0  0  1  0  0  0  0  1
+      </cml:transform3>
+     </cml:symmetry>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="F" x3="0.0" y3="0.0" z3="0.924731027969424E-01"/>
+      <cml:atom id="a2" elementType="H" x3="0.0" y3="0.0" z3="-0.825088102796943"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a2"/>
+     </cml:bondArray>
+    </cml:molecule>
+    <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-100.070357029582"/>
+    <property name="One-electron energy" method="RHF" value="-150.598402504974"/>
+    <property name="Two-electron energy" method="RHF" value="45.3375526024459"/>
+    <property name="Kinetic energy" method="RHF" value="100.03327540768"/>
+    <property name="Nuclear energy" method="RHF" value="5.19049287294622"/>
+    <property name="Virial quotient" method="RHF" value="-1.00037069286946"/>
+    <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 -0.761230481221359"/>
+    <time start="09:57:44" end="09:57:47" cpu="6.65" system="4.94" real="11.77"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="306.72" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="MP2" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.070357029582"/>
+    <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.189798957430864"/>
+    <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.110959274133676"/>
+    <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.30075823156454"/>
+    <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.371115261146"/>
+    <time start="09:57:47" end="09:57:47" cpu="0.1" system="0.0" real="0.11"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="307.29" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="HF-SCF" commandset="SCFPRO">
+    <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-100.06922526715"/>
+    <property name="One-electron energy" method="RHF" value="-150.607036616436"/>
+    <property name="Two-electron energy" method="RHF" value="45.3473184763397"/>
+    <property name="Kinetic energy" method="RHF" value="100.037668002989"/>
+    <property name="Nuclear energy" method="RHF" value="5.19049287294622"/>
+    <property name="Virial quotient" method="RHF" value="-1.00031545381645"/>
+    <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 -0.764985892682109"/>
+    <time start="09:57:47" end="09:57:49" cpu="1.22" system="0.04" real="1.4"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="307.29" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="MP2" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.06922526715"/>
+    <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.172137417726308"/>
+    <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.106957497611557"/>
+    <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.279094915337865"/>
+    <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.348320182487"/>
+    <time start="09:57:49" end="09:57:49" cpu="0.08" system="0.0" real="0.09"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="307.29" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="CCSD(T)" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.06922526715"/>
+    <property name="singlet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.185700558028033"/>
+    <property name="triplet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.956508387451597E-01"/>
+    <property name="correlation energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.281351396752038"/>
+    <property name="contribution" method="Triples (T)" stateSymmetry="1" stateNumber="1"
+      value="-0.693829769197126E-02"/>
+    <property name="correlation energy" method="Total" stateSymmetry="1" stateNumber="1"
+      value="-0.288289694444009"/>
+    <property name="total energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-100.350576663902"/>
+    <property name="energy" method="CCSD[T]" stateSymmetry="1" stateNumber="1"
+      value="-100.357795010429"/>
+    <property name="energy" method="CCSD-T" stateSymmetry="1" stateNumber="1"
+      value="-100.357344341562"/>
+    <property name="total energy" method="CCSD(T)" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.357514961594"/>
+    <time start="09:57:49" end="09:57:49" cpu="0.13" system="0.01" real="0.14"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="307.45" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <gradient name="ETOTAL" stateSymmetry="1" stateNumber="1" virial="-0.932972702246544E-03">
+      0.000000000000   0.000000000000  -0.000538065351
+      0.000000000000   0.000000000000   0.000538065351
+   </gradient>
+   <opt energy="-100.38031004" type="ETOTAL" line="0.0"
+     convergence="0.605809105466815E-03" gradient="0.760939317245857E-03"/>
+   <jobstep command="HF-SCF" commandset="SCFPRO">
+    <cml:molecule>
+     <cml:symmetry pointGroup="C2v">
+      <cml:transform3 title="generator" id="X">
+      -1  0  0  0  0  1  0  0  0  0  1  0  0  0  0  1
+      </cml:transform3>
+      <cml:transform3 title="generator" id="Y">
+       1  0  0  0  0 -1  0  0  0  0  1  0  0  0  0  1
+      </cml:transform3>
+     </cml:symmetry>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="F" x3="0.0" y3="0.0" z3="0.926997873524437E-01"/>
+      <cml:atom id="a2" elementType="H" x3="0.0" y3="0.0" z3="-0.825314787352443"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a2"/>
+     </cml:bondArray>
+    </cml:molecule>
+    <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-100.070334969967"/>
+    <property name="One-electron energy" method="RHF" value="-150.594084402259"/>
+    <property name="Two-electron energy" method="RHF" value="45.3358199272967"/>
+    <property name="Kinetic energy" method="RHF" value="100.032306254892"/>
+    <property name="Nuclear energy" method="RHF" value="5.18792950499509"/>
+    <property name="Virial quotient" method="RHF" value="-1.00038016433389"/>
+    <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 -0.761584349462634"/>
+    <time start="09:58:00" end="09:58:01" cpu="1.11" system="0.03" real="1.38"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="374.37" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="MP2" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.070334969967"/>
+    <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.189813466688962"/>
+    <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.11096789047129"/>
+    <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.300781357160251"/>
+    <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.371116327127"/>
+    <time start="09:58:01" end="09:58:01" cpu="0.1" system="0.01" real="0.11"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="374.37" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="HF-SCF" commandset="SCFPRO">
+    <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-100.069205444535"/>
+    <property name="One-electron energy" method="RHF" value="-150.602715581981"/>
+    <property name="Two-electron energy" method="RHF" value="45.3455806324505"/>
+    <property name="Kinetic energy" method="RHF" value="100.036659183737"/>
+    <property name="Nuclear energy" method="RHF" value="5.18792950499509"/>
+    <property name="Virial quotient" method="RHF" value="-1.00032534333977"/>
+    <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 -0.765332903495164"/>
+    <time start="09:58:01" end="09:58:03" cpu="0.88" system="0.03" real="1.11"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="374.37" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="MP2" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.069205444535"/>
+    <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.172152560440268"/>
+    <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.106965822874112"/>
+    <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.279118383314379"/>
+    <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.34832382785"/>
+    <time start="09:58:03" end="09:58:03" cpu="0.09" system="0.0" real="0.09"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="374.37" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="CCSD(T)" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.069205444535"/>
+    <property name="singlet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.185718117261834"/>
+    <property name="triplet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.956535163937566E-01"/>
+    <property name="correlation energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.281371633587757"/>
+    <property name="contribution" method="Triples (T)" stateSymmetry="1" stateNumber="1"
+      value="-0.694062607211826E-02"/>
+    <property name="correlation energy" method="Total" stateSymmetry="1" stateNumber="1"
+      value="-0.288312259659875"/>
+    <property name="total energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-100.350577078123"/>
+    <property name="energy" method="CCSD[T]" stateSymmetry="1" stateNumber="1"
+      value="-100.357797998156"/>
+    <property name="energy" method="CCSD-T" stateSymmetry="1" stateNumber="1"
+      value="-100.357346938997"/>
+    <property name="total energy" method="CCSD(T)" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.357517704195"/>
+    <time start="09:58:03" end="09:58:03" cpu="0.12" system="0.0" real="0.13"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="374.37" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <gradient name="ETOTAL" stateSymmetry="1" stateNumber="1" virial="-0.7645953093917E-05">
+      0.000000000000   0.000000000000  -0.000004407407
+      0.000000000000  -0.000000000000   0.000004407407
+   </gradient>
+   <opt energy="-100.3803102" type="ETOTAL" line="0.0"
+     convergence="0.50032937772837E-05" gradient="0.623301517066466E-05"/>
+   <jobstep command="HF-SCF" commandset="SCFPRO">
+    <cml:molecule>
+     <cml:symmetry pointGroup="C2v">
+      <cml:transform3 title="generator" id="X">
+      -1  0  0  0  0  1  0  0  0  0  1  0  0  0  0  1
+      </cml:transform3>
+      <cml:transform3 title="generator" id="Y">
+       1  0  0  0  0 -1  0  0  0  0  1  0  0  0  0  1
+      </cml:transform3>
+     </cml:symmetry>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="F" x3="0.0" y3="0.0" z3="0.927016595088965E-01"/>
+      <cml:atom id="a2" elementType="H" x3="0.0" y3="0.0" z3="-0.825316659508896"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a2"/>
+     </cml:bondArray>
+    </cml:molecule>
+    <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-100.07033478587"/>
+    <property name="One-electron energy" method="RHF" value="-150.594048765913"/>
+    <property name="Two-electron energy" method="RHF" value="45.3358056350079"/>
+    <property name="Kinetic energy" method="RHF" value="100.032298270796"/>
+    <property name="Nuclear energy" method="RHF" value="5.18790834503455"/>
+    <property name="Virial quotient" method="RHF" value="-1.00038024233904"/>
+    <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 -0.761587279644769"/>
+    <time start="09:58:12" end="09:58:14" cpu="1.09" system="0.05" real="1.31"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="407.98" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="MP2" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.07033478587"/>
+    <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.189813586636331"/>
+    <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.110967961755792"/>
+    <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.300781548392123"/>
+    <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.371116334262"/>
+    <time start="09:58:14" end="09:58:14" cpu="0.1" system="0.01" real="0.11"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="407.98" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="HF-SCF" commandset="SCFPRO">
+    <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-100.069205278887"/>
+    <property name="One-electron energy" method="RHF" value="-150.602678910276"/>
+    <property name="Two-electron energy" method="RHF" value="45.3455652863544"/>
+    <property name="Kinetic energy" method="RHF" value="100.036649537906"/>
+    <property name="Nuclear energy" method="RHF" value="5.18790834503455"/>
+    <property name="Virial quotient" method="RHF" value="-1.00032543813824"/>
+    <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 -0.765335772885201"/>
+    <time start="09:58:14" end="09:58:15" cpu="0.84" system="0.03" real="1.05"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="407.98" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="MP2" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.069205278887"/>
+    <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.172152680271622"/>
+    <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.10696588798803"/>
+    <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.279118568259652"/>
+    <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.348323847147"/>
+    <time start="09:58:15" end="09:58:15" cpu="0.09" system="0.0" real="0.1"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="407.98" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <jobstep command="CCSD(T)" commandset="CCSD">
+    <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-100.069205278887"/>
+    <property name="singlet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.185718262715775"/>
+    <property name="triplet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.956535386427581E-01"/>
+    <property name="correlation energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-0.281371800175058"/>
+    <property name="contribution" method="Triples (T)" stateSymmetry="1" stateNumber="1"
+      value="-0.694064513812948E-02"/>
+    <property name="correlation energy" method="Total" stateSymmetry="1" stateNumber="1"
+      value="-0.288312445313188"/>
+    <property name="total energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+      value="-100.350577079062"/>
+    <property name="energy" method="CCSD[T]" stateSymmetry="1" stateNumber="1"
+      value="-100.357798019791"/>
+    <property name="energy" method="CCSD-T" stateSymmetry="1" stateNumber="1"
+      value="-100.357346958281"/>
+    <property name="total energy" method="CCSD(T)" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-100.3575177242"/>
+    <time start="09:58:15" end="09:58:15" cpu="0.13" system="0.01" real="0.14"/>
+    <storage units="megabyte" memory="0.0" sf="0.66" df="407.98" eaf="43.08" ga="0.0"/>
+    <summary overall_method="CCSD(T)/USERDEF"/>
+   </jobstep>
+   <time start="09:57:35" end="09:58:15" cpu="23.91" system="14.53" real="39.77"/>
+   <storage units="megabyte" memory="0.0" sf="0.66" df="407.98" eaf="43.08" ga="0.0"/>
+   <summary overall_method="CCSD(T)/USERDEF//CCSD(T)/USERDEF"/>
+  </jobstep>
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-08-12T09:58:15+03:00"/>
+   <stm:metadata name="dc:creator" content="emmanous"/>
+   <stm:metadata name="dc:title" content="geometry optimization"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform>
+   <version major="2022" minor="2" SHA="518bf5c5e315925380b88506c70af759aa1d1d96"
+     integer_bits="64" parallelism="mpp">
+    2022.2
+    <date year="2023" month="8" day="12" hour="9" minute="57" second="32">
+     2023-08-12T09:57:32
+    </date>
+   </version>
+   <licence id="wis"/>
+   <parallel processes="8" nodes="1" all_processes="8" openmp="1"/>
+   <dimensions natom="400" nvalence="500" nvalence_pno="1000" nbasis="12000" nstate="100"
+     nsymm="16" nrec="512" nprim="2" ncol="100"/>
+  </platform>
+  <input>
+   <p>***,geometry optimization</p>
+   <p>gthresh,energy=1d-12,gradient=1d-6,twoint=1d-18,prefac=1d-20</p>
+   <p>GTHRESH, OPTSTEP=1d-5, OPTGRAD=1d-5, ENERGY=1d-11</p>
+   <p>noorient</p>
+   <p>charge=</p>
+   <p>multiplicity=</p>
+   <p>geomtyp=xyz</p>
+   <p>geom={</p>
+   <p>F        0.000000    0.000000    0.091577</p>
+   <p>H        0.000000    0.000000   -0.824192</p>
+   <p>}</p>
+   <p>MASS,ISO</p>
+   <p>MASS,PRINT</p>
+   <p>label1</p>
+   <p>basis={</p>
+   <include file="/gpfs01/work/emmanous/6Frequencies/implementation/MOLPRO/G4-Tano-v1/EXAMPLE_HF/ano-pVQZ.mbas"/>
+   <p>}</p>
+   <p>hf</p>
+   <p>mp2</p>
+   <p>e2=energy</p>
+   <p>basis={</p>
+   <include file="/gpfs01/work/emmanous/6Frequencies/implementation/MOLPRO/G4-Tano-v1/EXAMPLE_HF/ano-pVTZ.mbas"/>
+   <p>}</p>
+   <p>hf</p>
+   <p>mp2</p>
+   <p>emp2=energy</p>
+   <p>ccsd(t)</p>
+   <p>ehlc=(energy-emp2)</p>
+   <p>etotal=e2+ehlc</p>
+   <p>show,e*</p>
+   <p>optg,startcmd=label1,variable=etotal</p>
+  </input>
+  <diagnostics warnings="0"/>
+ </job>
+</molpro>

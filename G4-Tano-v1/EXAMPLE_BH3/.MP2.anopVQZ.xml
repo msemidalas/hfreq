@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <job>
+  <error type="Error" location="zmatrix.f" message="Illegal xyz input"/>
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-08-12T09:49:13+03:00"/>
