@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <job>
+  <jobstep command="HF-SCF" commandset="SCFPRO">
+   <cml:molecule>
+    <cml:symmetry pointGroup="C2v">
+     <cml:transform3 title="generator" id="X">
+      -1  0  0  0  0  1  0  0  0  0  1  0  0  0  0  1
+     </cml:transform3>
+     <cml:transform3 title="generator" id="Y">
+       1  0  0  0  0 -1  0  0  0  0  1  0  0  0  0  1
+     </cml:transform3>
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="O" x3="0.0" y3="0.0" z3="0.1172810075"/>
+     <cml:atom id="a2" elementType="H" x3="0.0" y3="0.7568536819" z3="-0.4709065037"/>
+     <cml:atom id="a3" elementType="H" x3="0.0" y3="-0.7568536819" z3="-0.4709065037"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-76.063772254717"/>
+   <property name="One-electron energy" method="RHF" value="-123.034320379925"/>
+   <property name="Two-electron energy" method="RHF" value="37.7878710661569"/>
+   <property name="Kinetic energy" method="RHF" value="75.9787111181494"/>
+   <property name="Nuclear energy" method="RHF" value="9.18267705905092"/>
+   <property name="Virial quotient" method="RHF" value="-1.00111953908293"/>
+   <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+     stateNumber="1" value="0.0 0.0 -0.783098559406955"/>
+   <time start="11:28:50" end="11:28:52" cpu="0.62" system="0.96" real="1.75"/>
+   <storage units="megabyte" memory="0.0" sf="0.0" df="233.62" eaf="37.8" ga="0.0"/>
+   <summary overall_method="HF/DEF2-TZVPPD,H=DEF2-TZVPP"/>
+  </jobstep>
+  <jobstep command="FREQ" commandset="FREQ">
+   <cml:molecule>
+    <cml:symmetry pointGroup="C2v">
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="O" x3="0.0" y3="0.0" z3="0.658269458001461E-01"/>
+     <cml:atom id="a2" elementType="H" x3="0.0" y3="0.7568536819" z3="-0.522360565399854"/>
+     <cml:atom id="a3" elementType="H" x3="0.0" y3="-0.7568536819" z3="-0.522360565399854"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a1 a3"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <vibrations>
+    <normalCoordinate wavenumber="3970.31" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="Err" real_zero_imag="R">
+      0.00000000 -0.06765429  0.00000000
+      0.00000000  0.53686118 -0.41421853
+      0.00000000  0.53686118  0.41421853
+    </normalCoordinate>
+    <normalCoordinate wavenumber="3888.1" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="Err" real_zero_imag="R">
+      0.00000000  0.00000000  0.04913195
+      0.00000000  0.57004923 -0.38987972
+      0.00000000 -0.57004923 -0.38987972
+    </normalCoordinate>
+    <normalCoordinate wavenumber="1811.31" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="Err" real_zero_imag="R">
+      0.00000000  0.00000000 -0.06769755
+      0.00000000  0.41371699  0.53720452
+      0.00000000 -0.41371699  0.53720452
+    </normalCoordinate>
+    <normalCoordinate wavenumber="604.73" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="B1" real_zero_imag="R">
+     -0.08364742  0.00000000  0.00000000
+      0.66377332  0.00000000  0.00000000
+      0.66377332  0.00000000  0.00000000
+    </normalCoordinate>
+    <normalCoordinate wavenumber="541.18" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="B2" real_zero_imag="R">
+      0.00000000 -0.04919148  0.00000000
+      0.00000000  0.39035239  0.56968490
+      0.00000000  0.39035239 -0.56968490
+    </normalCoordinate>
+    <normalCoordinate wavenumber="504.08" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="A2" real_zero_imag="R">
+      0.00000000  0.00000000  0.00000000
+      0.70435636  0.00000000  0.00000000
+     -0.70435636  0.00000000  0.00000000
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.21" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="Err" real_zero_imag="Z">
+      0.23563319  0.00000000  0.00000000
+      0.23563288  0.00000000  0.00000000
+      0.23563288  0.00000000  0.00000000
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.15" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="Err" real_zero_imag="Z">
+      0.00000000  0.23563316  0.00000000
+      0.00000000  0.23563311 -0.00000006
+      0.00000000  0.23563311  0.00000006
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.01" units="inverseCentimetre" IRintensity="0.0"
+      IRintensityunits="km/mol" symmetry="Err" real_zero_imag="I">
+      0.00000000  0.00000000  0.23563315
+      0.00000000  0.00000000  0.23563315
+      0.00000000  0.00000000  0.23563315
+    </normalCoordinate>
+   </vibrations>
+   <time start="11:28:52" end="11:28:52" cpu="0.29" system="0.03" real="0.32"/>
+   <storage units="megabyte" memory="0.0" sf="0.13" df="233.62" eaf="37.8" ga="0.0"/>
+   <summary overall_method="HF/DEF2-TZVPPD,H=DEF2-TZVPP"/>
+  </jobstep>
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-08-12T11:28:52+03:00"/>
+   <stm:metadata name="dc:creator" content="emmanous"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform>
+   <version major="2022" minor="2" SHA="518bf5c5e315925380b88506c70af759aa1d1d96"
+     integer_bits="64" parallelism="mpp">
+    2022.2
+    <date year="2023" month="8" day="12" hour="11" minute="28" second="50">
+     2023-08-12T11:28:50
+    </date>
+   </version>
+   <licence id="wis"/>
+   <parallel processes="8" nodes="1" all_processes="8" openmp="1"/>
+   <dimensions natom="400" nvalence="500" nvalence_pno="1000" nbasis="12000" nstate="100"
+     nsymm="16" nrec="512" nprim="2" ncol="100"/>
+  </platform>
+  <input>
+   <p>gthresh,energy=1d-12,gradient=1d-6,twoint=1d-18,prefac=1d-20</p>
+   <p>noorient</p>
+   <p>charge=0</p>
+   <p>multiplicity=1</p>
+   <p>geomtyp=xyz</p>
+   <p>geom={</p>
+   <p> O          0.0000000000        0.0000000000        0.1172810075</p>
+   <p> H          0.0000000000        0.7568536819       -0.4709065037</p>
+   <p> H          0.0000000000       -0.7568536819       -0.4709065037</p>
+   <p>}</p>
+   <p>MASS,ISO</p>
+   <p>MASS,PRINT</p>
+   <p>basis,def2-TZVPPD,h=def2-TZVPP</p>
+   <p>hf</p>
+   <p>{freq,analytic,print=3;noproject}</p>
+  </input>
+  <diagnostics warnings="0"/>
+ </job>
+</molpro>

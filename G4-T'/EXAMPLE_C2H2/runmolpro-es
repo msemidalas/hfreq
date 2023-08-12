@@ -1,0 +1,50 @@
+#!/bin/csh
+set SCRATCH_DISK=/scratch
+@ argc=$#argv
+if ($argc < 4) then
+echo "Usage: runmolpro jobname nmpp nthread memoryalloc [any additional arguments]"
+echo "    will run molpro mixed-parallel over nmpp*nthread CPUs, nmpp distributed * nthread OpenMP"
+echo "     memoryalloc is in MW per nmpp thread (so total req. will be memoryalloc*nmpp MW"
+echo "Example: runmolpro benzene 8 1 500 &"
+echo "For MPPX runs, put a minus sign in front of nmpp"
+echo "Example: runmolpro nh3-numfreq -8 1 300 &"
+exit
+endif
+set jobname = $argv[1] 
+if(-e ${jobname}) then
+echo "Molpro2010 input file found" ${jobname}
+else
+echo "Molpro2010 input file not found: exiting"
+exit
+endif
+set nmpp = $argv[2]
+if ($nmpp < 0) then
+set mpptype="--mppx"
+set nmpp = `echo $nmpp | sed 's/\-//'`
+else
+set mpptype="--mpp"
+endif
+set nthread = $argv[3]
+set memorysize = $argv[4]
+if ($argc > 4) then
+shift
+shift
+shift
+shift
+shift
+echo Additional arguments for MOLPRO: $argv[*]
+echo ... we assume you know what you are doing...
+else
+set extraopts = ""
+endif
+setenv MOL_EXEDIR /home/gmgroup/apps/molpro2022.2pl2bin/bin
+setenv MOL_SCRDIR $SCRATCH_DISK/$USER/${jobname}.$$
+echo MOL_SCRDIR set to $MOL_SCRDIR
+if !(-e $SCRATCH_DISK/$USER)then
+mkdir $SCRATCH_DISK/$USER
+endif
+set path=($MOL_EXEDIR $path)
+mkdir $MOL_SCRDIR
+molpro.orig -v $mpptype -n $nmpp -t $nthread -m ${memorysize}m -d ${MOL_SCRDIR} $extraopts $jobname
+rm -rf ${MOL_SCRDIR}
+exit
