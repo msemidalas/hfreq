@@ -41,7 +41,7 @@ Semidalas E, Martin JML. Canonical and DLPNO-Based G4(MP2)XK-Inspired Composite 
 
 Semidalas E, Martin JML. Canonical and DLPNO-Based Composite Wavefunction Methods Parametrized against Large and Chemically Diverse Training Sets. 2: Correlation-Consistent Basis Sets, Core–Valence Correlation, and F12 Alternatives. J Chem Theory Comput. 2020;16(12):7507-7524. doi:10.1021/acs.jctc.0c01106
 
-Semidalas E, Martin JML. Can G4-like Composite Ab Initio Methods Accurately Predict Vibrational Harmonic Frequencies? Mol Phys. 2023;accepted.
+Semidalas E, Martin JML. Can G4-like Composite Ab Initio Methods Accurately Predict Vibrational Harmonic Frequencies? Mol Phys. 2023. doi:10.1080/00268976.2023.2263593 status: accepted.
 
 Emmanouil Semidalas
 
